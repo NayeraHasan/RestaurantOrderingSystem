@@ -6,7 +6,7 @@ This Java-based project streamlines food ordering from multiple restaurants thro
 
 ## Table of Contents
 
-1. [Overview](#project-goals)
+1. [Overview](#Overview)
 2. [Structure](#structure)
 3. [Classes](#classes)
    1. [FoodItem](#fooditem)
