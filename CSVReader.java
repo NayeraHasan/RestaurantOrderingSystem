@@ -1,12 +1,4 @@
-// //
-//
-//   A Java, CSV Reader script to include in student starter files
-//
-//     Author: Summer worker Mia Ellis-Einhorn
-//     Date: Summer 2022
-//
-//
-//
+
 
 import java.io.*;
 import java.util.ArrayList;
@@ -14,7 +6,6 @@ import java.util.ArrayList;
 public class CSVReader {
 
     BufferedReader br;
-
     // Main function of CSV Reader class, takes in input from CSV File and then output as ArrayList.
     public ArrayList<String[]> read(FileReader csvFile){
         ArrayList<String[]> eachLine = new ArrayList<String[]>();
@@ -23,13 +14,14 @@ public class CSVReader {
             br = new BufferedReader(csvFile);
             String line = "";
             String[] tempArr;
-
+          
+            // Read each line from the CSV file and split it into an array of strings
             while((line = br.readLine()) != null) {
                 tempArr = line.split(",");
                 eachLine.add(tempArr);
             }
 
-        } catch(IOException ioe) {
+        } catch(IOException ioe) { // Print any IOException that occurs
             ioe.printStackTrace();
         }
         return(eachLine); // output as ArrayList of Strings.
