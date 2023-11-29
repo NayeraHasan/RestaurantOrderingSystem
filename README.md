@@ -17,7 +17,7 @@ This Java-based project streamlines food ordering from multiple restaurants thro
 6. [CSV Reader (Supplementary Class)](#csv-reader-supplementary-class)
 
 
-## Project Goals
+## Overview
 
 - **Food Ordering System**
 - Restaurant menus in the form of CSV files are put in the command line.
@@ -84,5 +84,4 @@ java Main GrillMenu.csv
 ```
 
 ## CSV Reader (Supplementary Class)
-
-- A Java, CSV Reader script to include in student starter files.
+- The CSVReader class contains two main methods: read and close and is designed to handle potential IOExceptions that may occur during file reading, and it prints the stack trace for any such exceptions.
